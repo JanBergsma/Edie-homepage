@@ -8,7 +8,7 @@ https://devchallenges.io/challenges/xobQBuf8zWWmiYMIAZe0
 
 - **User story**: I can see a page following the given design
 - **User story**: I can see a page on mobile following the given design
-- **User story**: can go to certain locations by selecting links in navigation or footer
+- **User story**: I can go to certain locations by selecting links in navigation or footer
 
 > Surprise me with mobile navigation.
 

@@ -1,0 +1,211 @@
+:root {
+  /* Fonts variables */
+  --font-size-big: 1.5rem;
+  --font-size-small: 0.75rem;
+
+  /* Colors */
+  --primary-color: #333;
+  --secondary-color: #2d9cdb;
+  --primary-background-color: #fff;
+  --email-background-color: #f2f2f2;
+  --valid-color: #e7f7e7;
+  --invalid-color: #f1e3e3ab;
+  --button-color: #fff;
+  --button-background-color: #2d9cdb;
+
+  /* Margins */
+  --margins-sides-wide: 0.625rem;
+  --margins-sides-small: 2.5rem;
+  --margins-top-bottom: 1rem;
+
+  /* Borders */
+  --border-radius: 12px;
+}
+
+/* General settings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  /* outline: 1px red solid; */
+  padding: 0;
+}
+
+body {
+  background: var(--primary-background-color);
+  color: var(--primary-color);
+  font-family: Poppins, sans-serif;
+}
+
+/* Classes for header and menu */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--margins-top-bottom) var(--margins-sides-wide);
+}
+
+.logo__link {
+  color: var(--primary-color);
+  font-weight: 800;
+  font-size: var(--font-size-big);
+  font-family: Heebo, sans-serif;
+  text-decoration: none;
+}
+
+/* Section for hamburger menu */
+.hamburger-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger-menu__hamburger {
+  display: block;
+  position: relative;
+  transition: background 0.2s ease-in-out;
+  background: var(--primary-color);
+  width: 18px;
+  height: 2px;
+}
+
+.hamburger-menu__hamburger::after,
+.hamburger-menu__hamburger::before {
+  display: block;
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+  background: var(--primary-color);
+  width: 100%;
+  height: 100%;
+  content: '';
+}
+
+.hamburger-menu__hamburger::before {
+  top: 5px;
+}
+
+.hamburger-menu__hamburger::after {
+  top: -5px;
+}
+
+.hamburger-menu__checkbox {
+  display: none;
+}
+
+.hamburger-menu__label {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.hamburger-menu__checkbox:checked~label span {
+  background: transparent;
+}
+
+.hamburger-menu__checkbox:checked~label span::before {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.hamburger-menu__checkbox:checked~label span::after {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+/* Menu Section */
+.menu {
+  display: flex;
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+  visibility: hidden;
+  transition: height 0.2s ease-in-out;
+  width: 0;
+  height: 0;
+  list-style: none;
+}
+
+.hamburger-menu__checkbox:checked~.menu {
+  visibility: visible;
+  background: var(--primary-background-color);
+  width: 100%;
+  height: 90%;
+}
+
+.menu__link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* Hero section */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+  font-size: var(--font-size-small);
+}
+
+.section__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0 var(--margins-sides-small);
+}
+
+.section__provoking-question {
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: var(--font-size-small);
+}
+
+.section__motivations {
+  font-weight: 500;
+  font-size: var(--font-size-big);
+}
+
+.section__hero-image {
+  border-radius: var(--border-radius);
+  padding: 0 var(--margins-sides-wide);
+  width: 100%;
+}
+
+/* Contact Form */
+.contact__input {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.4rem;
+  margin-top: 0.2rem;
+  border-radius: var(--border-radius);
+  background: var(--email-background-color);
+  padding: 0.4rem;
+}
+
+.contact__email {
+  border-style: none;
+  background: var(--email-background-color);
+  width: 100%;
+}
+
+.contact__email:invalid {
+  background: var(--invalid-color);
+}
+
+.contact__email:placeholder-shown {
+  background: var(--background-primary-color);
+}
+
+.contact__email:valid {
+  background: var(--valid-color);
+}
+
+.contact__button {
+  color: var(--button-color);
+  background: var(--button-background-color);
+  border-radius: var(--border-radius);
+  padding: 0.6rem 1rem;
+  border-style: none;
+}

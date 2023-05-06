@@ -1,6 +1,7 @@
 const hamburgerMenuCheckbox = document.getElementById(
   'hamburger-menu__checkbox',
 );
+
 [...document.getElementsByClassName('menu__link')].forEach((a) =>
   a.addEventListener('click', () => (hamburgerMenuCheckbox.checked = false)),
 );

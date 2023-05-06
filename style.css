@@ -4,6 +4,7 @@
   --font-size-big: 1.125rem;
   --font-size-normal: 1rem;
   --font-size-small: 0.75rem;
+  --font-size-logo-footer: 2.25rem;
 
   /* Colors */
   --basic-color: #333;
@@ -11,6 +12,10 @@
   --attention-color: #EB5757;
   --basic-background-color: #fff;
   --email-background-color: #f2f2f2;
+  --footer-color: #fff;
+  --footer-color-dimmed: #f2f2f2;
+  --footer-color-grey: #828282;
+  --footer-backround-color: #100E1D;
   --valid-color: #e7f7e7;
   --invalid-color: #f1e3e3ab;
   --button-color-accent: #fff;
@@ -399,5 +404,71 @@ body {
 }
 
 /* Clients section */
+.card {
+  display: flex;
+  gap: 1rem;
+}
+
+.card__image {
+  width: 6rem;
+  border-radius: 10px;
+}
+
+.card__name {
+  font-size: var(--font-size-bigger);
+  font-weight: 500;
+}
+
+.card__function {
+  font-size: var(--font-size-big);
+  font-weight: 500;
+  color: var(--button-color);
+}
 
 /* Footer */
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 8fr;
+  margin-top: 6rem;
+  color: var(--footer-color);
+  background: var(--footer-backround-color);
+  padding: 3rem var(--margins-sides-small) 2rem;
+  gap: 2rem;
+}
+
+.menu-footer {
+  gap: 4em;
+  list-style: none;
+  height: min-content;
+}
+
+.menu-footer__link {
+  color: var(--footer-color);
+  text-decoration: none;
+}
+
+.logo-footer {
+  color: var(--footer-color);
+  font-size: var(--font-size-logo-footer);
+}
+
+.footer__socials {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.section__salestext--footer {
+  font-size: var(--font-size-small);
+  color: var(--footer-color-grey);
+  padding: 0.3rem;
+}
+
+
+.footer__created-by {
+  font-family: Poppins, sans-serif;
+  color: var(--footer-color-dimmed);
+  text-align: center;
+  font-size: var(--font-size-small);
+  grid-row: 6/7;
+}

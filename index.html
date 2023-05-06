@@ -1,296 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="img/devchallenges.png"
-      type="image/x-icon" />
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com" />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@300;400;500;700&display=swap"
-      rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link
-      rel="stylesheet"
-      href="style.css" />
-    <title>Edie homepage</title>
-  </head>
 
-  <body>
-    <h1 class="main-title">Eddie homepage</h1>
-    <header class="header">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="img/devchallenges.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@300;400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Edie homepage</title>
+</head>
+
+<body>
+  <h1 class="main-title">Eddie homepage</h1>
+  <header class="header">
+    <div class="logo">
+      <a class="logo__link" href="#">Edie</a>
+    </div>
+    <div class="hamburger-menu">
+      <input class="hamburger-menu__checkbox" type="checkbox" name="hamburger-menu__checkbox"
+        id="hamburger-menu__checkbox" />
+      <label class="hamburger-menu__label" for="hamburger-menu__checkbox"><span
+          class="hamburger-menu__hamburger"></span></label>
+      <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="#hero-section">Home</a></li>
+        <li class="menu__item"><a class="menu__link" href="#services">Services</a></li>
+        <li class="menu__item"><a class="menu__link" href="#works">Our Works</a></li>
+        <li class="menu__item"><a class="menu__link" href="#clients">Clients</a></li>
+        <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <main class="main">
+    <section id="hero-section" class="section section-hero">
+      <div class="section__text">
+        <div class="section__hero-header">
+          <h2 class="section__provoking-question">Unhappy with your website?</h2>
+          <h3 class="section__motivations">We create beautiful and fast web services</h3>
+        </div>
+      </div>
+      <div class="section__hero-container">
+        <img src="img/heroImage.jpg" alt="Cosy meeting" class="section__hero-image" width="400px" />
+      </div>
+      <div class="section__text">
+        <h2 class="section__motivations">Story, emotion and purpose</h2>
+        <p class="section__salestext">
+          We help transform your ideas into real world applications that will
+          outperform your toughest competition and help you achieve your
+          strategic goals in short period of time.
+        </p>
+        <div class="contact">
+          <form action="" class="contact__form">
+            <label for="contact__email" class="contact__label">
+              <p class="section__salestext"> Want us to contact you? </p>
+              <div class="contact__input">
+                <input type="email" name="contact__email" id="contact__email" class="contact__email" placeholder="Email"
+                  required />
+                <input type="submit" value="Join" class="contact__button" />
+              </div>
+            </label>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="section">
+      <div class="section__text section__text--services">
+        <h2 class="section__motivations">We offer high demand services </h2>
+
+        <div class="services-container">
+          <article class="service-card">
+            <div class="service__icon service__icon--ui-ux">
+              <span class="material-symbols-outlined service__icon-symbol">
+                edit
+              </span>
+            </div>
+            <h3 class="service-card__header">UI/UX Design</h3>
+            <p class="service-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.</p>
+            <button class="service-card__button">Get Started</button>
+          </article>
+          <article class="service-card">
+            <div class="service__icon service__icon--frontend">
+              <span class="material-symbols-outlined service__icon-symbol">
+                code
+              </span>
+            </div>
+            <h3 class="service-card__header">Front End</h3>
+            <p class="service-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.</p>
+            <button class="service-card__button service-card__button--accent">Get Started</button>
+          </article>
+          <article class="service-card">
+            <div class="service__icon service__icon--backend">
+              <span class="material-symbols-outlined service__icon-symbol">
+                storage
+              </span>
+            </div>
+            <h3 class="service-card__header">Back End</h3>
+            <p class="service-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.</p>
+            <button class="service-card__button">Get Started</button>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="works" class="section">
+      <div class="section__text">
+        <h2 class="section__motivations">We offer high demand services</h2>
+      </div>
+      <div class="works">
+        <figure class="work__figure">
+          <div class="work__image-box work__image-box--fullstack">
+            <img class="work__image work__image--fullstack" src="img/smarthome.jpg" alt="" />
+          </div>
+          <figcaption class="works__caption">
+            <h3 class="works__service">Full stack application</h3>
+            <h4 class="works__description">Smart home dashboard</h4>
+          </figcaption>
+        </figure>
+        <figure class="work__figure">
+          <div class="work__image-box">
+            <img class="work__image" src="img/onboard.png" alt="" />
+          </div>
+          <figcaption class="works__caption">
+            <h3 class="works__service">UX/UI design</h3>
+            <h4 class="works__description">Onboard application</h4>
+          </figcaption>
+        </figure>
+        <figure class="work__figure">
+          <div class="work__image-box">
+            <img class="work__image" src="img/booking.png" alt="" />
+          </div>
+          <figcaption class="works__caption">
+            <h3 class="works__service">Mobile application</h3>
+            <h4 class="works__description">Mobile application</h4>
+          </figcaption>
+        </figure>
+        <figure class="work__figure">
+          <div class="work__image-box">
+            <img class="work__image work__image--frontend" src="img/juice-product.png" alt="" />
+          </div>
+          <figcaption class="works__caption">
+            <h3 class="works__service">Front End application</h3>
+            <h4 class="works__description">Smart home dashboard</h4>
+          </figcaption>
+        </figure>
+        <a href="#" class="see-more__link">See more</a>
+      </div>
+    </section>
+    <section id="contact" class="section">
+      <div class="section__text">
+        <h2 class="section__motivations">We are chilled and a laidback team</h2>
+        <h3 class="section__attention">Meet the team</h3>
+        <p class="section__salestext">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <div class="team">
+          <img class="team__member-img team__member-img--1" src="img/person3.png" alt="team member" />
+          <img class="team__member-img team__member-img--2" src="img/person1.png" alt="team member" />
+          <img class="team__member-img team__member-img--3" src="img/person2.png" alt="team member" />
+        </div>
+      </div>
+    </section>
+    <section id="clients" class="section">
+      <div class="section__text">
+        <h2 class="section__motivations">“Fast and outstanding resutls. Edie understands their customer’s
+          needs. They have a young and talented team.”
+        </h2>
+        <div class="card">
+          <img src="/img/person4.png" alt="Carlos Tran The Decorate Gatsby" class="card__image">
+          <div class="card__name-and-function">
+            <p class="card__name">Carlos Tran</p>
+            <p class="card__function">The Decorate Gatsby</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <!-- <div class="footer__menu-container"> -->
+    <ul class="menu-footer">
+      <li class="menu-footer__item"><a class="menu-footer__link" href="#hero-section">Home</a></li>
+      <li class="menu-footer__item"><a class="menu-footer__link" href="#services">Services</a></li>
+      <li class="menu-footer__item"><a class="menu-footer__link" href="#works">Our Works</a></li>
+      <li class="menu-footer__item"><a class="menu-footer__link" href="#clients">Clients</a></li>
+      <li class="menu-footer__item"><a class="menu-footer__link" href="#contact">Contact</a></li>
+    </ul>
+    <!-- </div> -->
+    <div class="footer__logo-and-socials-container">
       <div class="logo">
-        <a
-          class="logo__link"
-          href="#"
-          >Edie</a
-        >
+        <a class="logo__link logo-footer" href="#">Edie</a>
       </div>
-      <div class="hamburger-menu">
-        <input
-          class="hamburger-menu__checkbox"
-          type="checkbox"
-          name="hamburger-menu__checkbox"
-          id="hamburger-menu__checkbox" />
-        <label
-          class="hamburger-menu__label"
-          for="hamburger-menu__checkbox"
-          ><span class="hamburger-menu__hamburger"></span
-        ></label>
-        <ul class="menu">
-          <li class="menu__item"
-            ><a
-              class="menu__link"
-              href="#hero-section"
-              >Home</a
-            ></li
-          >
-          <li class="menu__item"
-            ><a
-              class="menu__link"
-              href="#services"
-              >Services</a
-            ></li
-          >
-          <li class="menu__item"
-            ><a
-              class="menu__link"
-              href="#works"
-              >Our Works</a
-            ></li
-          >
-          <li class="menu__item"
-            ><a
-              class="menu__link"
-              href="#clients"
-              >Clients</a
-            ></li
-          >
-          <li class="menu__item"
-            ><a
-              class="menu__link"
-              href="#contact"
-              >Contact</a
-            ></li
-          >
-        </ul>
+      <div class="footer__socials">
+        <img src="img/instagram.svg" alt="instagram" class="footer__social-icon">
+        <img src="img/linkedin.svg" alt="linkedin" class="footer__social-icon">
+        <img src="img/twitter.svg" alt="twitter" class="footer__social-icon">
       </div>
-    </header>
-    <main class="main">
-      <section
-        id="hero-section"
-        class="section section-hero">
-        <div class="section__text">
-          <div class="section__hero-header">
-            <h2 class="section__provoking-question"
-              >Unhappy with your website?</h2
-            >
-            <h3 class="section__motivations"
-              >We create beautiful and fast web services</h3
-            >
+    </div>
+    <div class="contact">
+      <form action="" class="contact__form">
+        <label for="contact__email" class="contact__label">
+          <p class="section__salestext section__salestext--footer"> Want us to contact you? </p>
+          <div class="contact__input">
+            <input type="email" name="contact__email" id="contact__email-footer" class="contact__email"
+              placeholder="Email" required />
+            <input type="submit" value="Join" class="contact__button" />
           </div>
-        </div>
-        <div class="section__hero-container">
-          <img
-            src="img/heroImage.jpg"
-            alt="Cosy meeting"
-            class="section__hero-image"
-            width="400px" />
-        </div>
-        <div class="section__text">
-          <h2 class="section__motivations">Story, emotion and purpose</h2>
-          <p class="section__salestext">
-            We help transform your ideas into real world applications that will
-            outperform your toughest competition and help you achieve your
-            strategic goals in short period of time.
-          </p>
-          <div class="contact">
-            <form
-              action=""
-              class="contact__form">
-              <label
-                for="contact__email"
-                class="contact__label">
-                <p class="section__salestext"> Want us to contact you? </p>
-                <div class="contact__input">
-                  <input
-                    type="email"
-                    name="contact__email"
-                    id="contact__email"
-                    class="contact__email"
-                    placeholder="Email."
-                    required />
-                  <input
-                    type="submit"
-                    value="Join"
-                    class="contact__button" />
-                </div>
-              </label>
-            </form>
-          </div>
-        </div>
-      </section>
-      <section
-        id="services"
-        class="section">
-        <div class="section__text section__text--services">
-          <h2 class="section__motivations">We offer high demand services </h2>
+        </label>
+      </form>
+    </div>
+    <div class="footer__created-by">
+      <p>created by <strong>username</strong> - devChallenges.io</p>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
 
-          <div class="services-container">
-            <article class="service-card">
-              <div class="service__icon service__icon--ui-ux">
-                <span class="material-symbols-outlined service__icon-symbol">
-                  edit
-                </span>
-              </div>
-              <h3 class="service-card__header">UI/UX Design</h3>
-              <p class="service-card__text"
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
-                metus ac nulla consequat aliquet id quis turpis.</p
-              >
-              <button class="service-card__button">Get Started</button>
-            </article>
-            <article class="service-card">
-              <div class="service__icon service__icon--frontend">
-                <span class="material-symbols-outlined service__icon-symbol">
-                  code
-                </span>
-              </div>
-              <h3 class="service-card__header">Front End</h3>
-              <p class="service-card__text"
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
-                metus ac nulla consequat aliquet id quis turpis.</p
-              >
-              <button class="service-card__button service-card__button--accent"
-                >Get Started</button
-              >
-            </article>
-            <article class="service-card">
-              <div class="service__icon service__icon--backend">
-                <span class="material-symbols-outlined service__icon-symbol">
-                  storage
-                </span>
-              </div>
-              <h3 class="service-card__header">Back End</h3>
-              <p class="service-card__text"
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
-                metus ac nulla consequat aliquet id quis turpis.</p
-              >
-              <button class="service-card__button">Get Started</button>
-            </article>
-          </div>
-        </div>
-      </section>
-      <section
-        id="works"
-        class="section">
-        <div class="section__text">
-          <h2 class="section__motivations">We offer high demand services</h2>
-        </div>
-        <div class="works">
-          <figure class="work__figure">
-            <div class="work__image-box work__image-box--fullstack">
-              <img
-                class="work__image work__image--fullstack"
-                src="img/smarthome.jpg"
-                alt="" />
-            </div>
-            <figcaption class="works__caption">
-              <h3 class="works__service">Full stack application</h3>
-              <h4 class="works__description">Smart home dashboard</h4>
-            </figcaption>
-          </figure>
-          <figure class="work__figure">
-            <div class="work__image-box">
-              <img
-                class="work__image"
-                src="img/onboard.png"
-                alt="" />
-            </div>
-            <figcaption class="works__caption">
-              <h3 class="works__service">UX/UI design</h3>
-              <h4 class="works__description">Onboard application</h4>
-            </figcaption>
-          </figure>
-          <figure class="work__figure">
-            <div class="work__image-box">
-              <img
-                class="work__image"
-                src="img/booking.png"
-                alt="" />
-            </div>
-            <figcaption class="works__caption">
-              <h3 class="works__service">Mobile application</h3>
-              <h4 class="works__description">Mobile application</h4>
-            </figcaption>
-          </figure>
-          <figure class="work__figure">
-            <div class="work__image-box">
-              <img
-                class="work__image work__image--frontend"
-                src="img/juice-product.png"
-                alt="" />
-            </div>
-            <figcaption class="works__caption">
-              <h3 class="works__service">Front End application</h3>
-              <h4 class="works__description">Smart home dashboard</h4>
-            </figcaption>
-          </figure>
-          <a
-            href="#"
-            class="see-more__link"
-            >See more</a
-          >
-        </div>
-      </section>
-      <section
-        id="contact"
-        class="section">
-        <div class="section__text">
-          <h2 class="section__motivations"
-            >We are chilled and a laidback team</h2
-          >
-          <h3 class="section__attention">Meet the team</h3>
-          <p class="section__salestext">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-          <div class="team">
-            <img
-              class="team__member-img team__member-img--1"
-              src="img/person3.png"
-              alt="team member" />
-            <img
-              class="team__member-img team__member-img--2"
-              src="img/person1.png"
-              alt="team member" />
-            <img
-              class="team__member-img team__member-img--3"
-              src="img/person2.png"
-              alt="team member" />
-          </div>
-        </div>
-      </section>
-      <section
-        id="clients"
-        class="section">
-      </section>
-    </main>
-    <footer class="footer"></footer>
-    <script src="index.js"></script>
-  </body>
 </html>

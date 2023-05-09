@@ -57,8 +57,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-
-  /* outline: 1px red ssolid; */
+  outline: 1px red solid;
   padding: 0;
 }
 
@@ -579,7 +578,7 @@ body {
   .works {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(11, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     padding: 0 var(--margins-sides-wide);
     column-gap: 1.4rem;
     row-gap: 5rem;

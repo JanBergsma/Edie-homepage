@@ -45,7 +45,8 @@
         </div>
       </div>
       <div class="section__hero-container">
-        <img src="img/heroImage.jpg" alt="Cosy meeting" class="section__hero-image" width="400px" />
+        <!-- <img src="img/heroImage.jpg" alt="Cosy meeting" class="section__hero-image" width="400px" /> -->
+        <div class="section__hero-image"></div>
       </div>
       <div class="section__text">
         <h2 class="section__motivations">Story, emotion and purpose</h2>
@@ -57,7 +58,7 @@
         <div class="contact">
           <form action="" class="contact__form">
             <label for="contact__email" class="contact__label">
-              <p class="section__salestext"> Want us to contact you? </p>
+              <p class="section__salestext section__salestext--desktop"> Want us to contact you? </p>
               <div class="contact__input">
                 <input type="email" name="contact__email" id="contact__email" class="contact__email" placeholder="Email"
                   required />
@@ -71,42 +72,41 @@
     <section id="services" class="section">
       <div class="section__text section__text--services">
         <h2 class="section__motivations">We offer high demand services </h2>
-
-        <div class="services-container">
-          <article class="service-card">
-            <div class="service__icon service__icon--ui-ux">
-              <span class="material-symbols-outlined service__icon-symbol">
-                edit
-              </span>
-            </div>
-            <h3 class="service-card__header">UI/UX Design</h3>
-            <p class="service-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
-              metus ac nulla consequat aliquet id quis turpis.</p>
-            <button class="service-card__button">Get Started</button>
-          </article>
-          <article class="service-card">
-            <div class="service__icon service__icon--frontend">
-              <span class="material-symbols-outlined service__icon-symbol">
-                code
-              </span>
-            </div>
-            <h3 class="service-card__header">Front End</h3>
-            <p class="service-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
-              metus ac nulla consequat aliquet id quis turpis.</p>
-            <button class="service-card__button service-card__button--accent">Get Started</button>
-          </article>
-          <article class="service-card">
-            <div class="service__icon service__icon--backend">
-              <span class="material-symbols-outlined service__icon-symbol">
-                storage
-              </span>
-            </div>
-            <h3 class="service-card__header">Back End</h3>
-            <p class="service-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
-              metus ac nulla consequat aliquet id quis turpis.</p>
-            <button class="service-card__button">Get Started</button>
-          </article>
-        </div>
+      </div>
+      <div class="services-container">
+        <article class="service-card">
+          <div class="service__icon service__icon--ui-ux">
+            <span class="material-symbols-outlined service__icon-symbol">
+              edit
+            </span>
+          </div>
+          <h3 class="service-card__header">UI/UX Design</h3>
+          <p class="service-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+            metus ac nulla consequat aliquet id quis turpis.</p>
+          <button class="service-card__button">Get Started</button>
+        </article>
+        <article class="service-card service-card--middle-desktop">
+          <div class="service__icon service__icon--frontend">
+            <span class="material-symbols-outlined service__icon-symbol">
+              code
+            </span>
+          </div>
+          <h3 class="service-card__header">Front End</h3>
+          <p class="service-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+            metus ac nulla consequat aliquet id quis turpis.</p>
+          <button class="service-card__button service-card__button--accent">Get Started</button>
+        </article>
+        <article class="service-card">
+          <div class="service__icon service__icon--backend">
+            <span class="material-symbols-outlined service__icon-symbol">
+              storage
+            </span>
+          </div>
+          <h3 class="service-card__header">Back End</h3>
+          <p class="service-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+            metus ac nulla consequat aliquet id quis turpis.</p>
+          <button class="service-card__button">Get Started</button>
+        </article>
       </div>
     </section>
     <section id="works" class="section">
@@ -114,7 +114,7 @@
         <h2 class="section__motivations">We offer high demand services</h2>
       </div>
       <div class="works">
-        <figure class="work__figure">
+        <figure class="work__figure work__figure--first">
           <div class="work__image-box work__image-box--fullstack">
             <img class="work__image work__image--fullstack" src="img/smarthome.jpg" alt="" />
           </div>
@@ -123,7 +123,7 @@
             <h4 class="works__description">Smart home dashboard</h4>
           </figcaption>
         </figure>
-        <figure class="work__figure">
+        <figure class="work__figure work__figure--third">
           <div class="work__image-box">
             <img class="work__image" src="img/onboard.png" alt="" />
           </div>
@@ -132,7 +132,7 @@
             <h4 class="works__description">Onboard application</h4>
           </figcaption>
         </figure>
-        <figure class="work__figure">
+        <figure class="work__figure work__figure--second">
           <div class="work__image-box">
             <img class="work__image" src="img/booking.png" alt="" />
           </div>
@@ -141,7 +141,7 @@
             <h4 class="works__description">Mobile application</h4>
           </figcaption>
         </figure>
-        <figure class="work__figure">
+        <figure class="work__figure work__figure--fourth">
           <div class="work__image-box">
             <img class="work__image work__image--frontend" src="img/juice-product.png" alt="" />
           </div>
@@ -155,21 +155,26 @@
     </section>
     <section id="contact" class="section">
       <div class="section__text">
-        <h2 class="section__motivations">We are chilled and a laidback team</h2>
-        <h3 class="section__attention">Meet the team</h3>
-        <p class="section__salestext">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <div class="team">
-          <img class="team__member-img team__member-img--1" src="img/person3.png" alt="team member" />
-          <img class="team__member-img team__member-img--2" src="img/person1.png" alt="team member" />
-          <img class="team__member-img team__member-img--3" src="img/person2.png" alt="team member" />
+        <div class="section__contact-container">
+          <div class="section__contact-header">
+            <h2 class="section__motivations section__motivations--desktop">We are chilled and a laidback team</h2>
+            <h3 class="section__attention section__attention--desktop">Meet the team</h3>
+            <p class="section__salestext section__salestext--desktop">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="team">
+            <img class="team__member-img team__member-img--1" src="img/person3.png" alt="team member" />
+            <img class="team__member-img team__member-img--2" src="img/person1.png" alt="team member" />
+            <img class="team__member-img team__member-img--3" src="img/person2.png" alt="team member" />
+          </div>
         </div>
       </div>
     </section>
     <section id="clients" class="section">
       <div class="section__text">
-        <h2 class="section__motivations">“Fast and outstanding resutls. Edie understands their customer’s
+        <h2 class="section__motivations section__motivations--desktop">“Fast and outstanding resutls. Edie understands
+          their customer’s
           needs. They have a young and talented team.”
         </h2>
         <div class="card">
@@ -202,7 +207,7 @@
         <img src="img/twitter.svg" alt="twitter" class="footer__social-icon">
       </div>
     </div>
-    <div class="contact">
+    <div class="contact contact--footer">
       <form action="" class="contact__form">
         <label for="contact__email" class="contact__label">
           <p class="section__salestext section__salestext--footer"> Want us to contact you? </p>

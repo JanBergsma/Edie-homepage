@@ -5,6 +5,7 @@
   --font-size-big: 1.125rem;
   --font-size-normal: 1rem;
   --font-size-small: 0.75rem;
+  --font-size-join-label: 0.625rem;
   --font-size-logo-header: 1.5rem;
   --font-size-logo-footer: 2.25rem;
 
@@ -38,12 +39,13 @@
 }
 
 /* Desktop variables */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 500px) {
   :root {
     /* Fonts variables */
     --font-size-bigger: 2.25rem;
     --font-size-big: 1.125rem;
     --font-size-small: 0.75rem;
+    --font-size-join-label: 0.875rem;
     --font-size-logo-header: 2.25rem;
     --font-size-logo-footer: 2.25rem;
 
@@ -226,6 +228,11 @@ body {
 }
 
 /* Contact Form */
+.contact__label {
+  font-size: var(--font-size-join-label);
+  color: var(--button-color);
+}
+
 .contact__input {
   display: flex;
   justify-content: space-between;
@@ -550,6 +557,11 @@ body {
   .section__salestext--desktop {
     width: 100%;
   }
+
+  /* Hero section */
+    .section-hero {
+      margin-top: 2rem;
+    }
 
   /* Services section */
   .services-container {
